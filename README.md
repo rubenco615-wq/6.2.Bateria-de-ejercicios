@@ -1,6 +1,7 @@
 # 6.2.Bateria-de-ejercicios
 
 EJERCICIO 1 
+```mermaid
 classDiagram
     class Usuario {
         -String nombreUsuario
@@ -9,4 +10,4 @@ classDiagram
         +cambiarPassword(nueva : String) void
         -validarEmail() boolean
     }
-    
+```
