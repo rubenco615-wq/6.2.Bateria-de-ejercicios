@@ -42,5 +42,18 @@ classDiagram
     Computadora *-- PlacaBase : composición
     Computadora o-- Raton : agregación
 ```
+EJERCICIO 4
+
+``` mermaid
+classDiagram
+    class CentroComercial {
+    }
+
+    class Tienda {
+    }
+
+    CentroComercial "1" --> "1..*" Tienda : alberga
+```
+
 
 
