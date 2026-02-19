@@ -11,7 +11,7 @@ classDiagram
         -validarEmail() boolean
     }
 ```
-
+EJERCICIO 2
 ```mermaid
 classDiagram
     class Persona {
@@ -26,3 +26,21 @@ classDiagram
 
     Persona <|-- Estudiante
 ```
+EJERCICIO 3
+
+``` mermaid
+classDiagram
+    class Computadora {
+    }
+
+    class PlacaBase {
+    }
+
+    class Raton {
+    }
+
+    Computadora *-- PlacaBase : composición
+    Computadora o-- Raton : agregación
+```
+
+
