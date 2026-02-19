@@ -81,7 +81,36 @@ classDiagram
     Carrito ..> MetodoPago : usa
 
 ```
+EJERCICIO 6
 
+``` mermaid
+classDiagram
+    class Recurso {
+        -int id
+        -String titulo
+        +prestar() void
+        +devolver() void
+    }
+
+    class Libro {
+        -String isbn
+    }
+
+    class Revista {
+        -int numeroEdicion
+    }
+
+    class Usuario {
+        -String nombre
+        -int numCarnet
+    }
+
+    Recurso <|-- Libro
+    Recurso <|-- Revista
+
+    Usuario "1" --> "0..*" Recurso : presta
+
+```
 
 
 
