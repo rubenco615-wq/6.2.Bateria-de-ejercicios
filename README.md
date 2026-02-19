@@ -11,3 +11,18 @@ classDiagram
         -validarEmail() boolean
     }
 ```
+
+```mermaid
+classDiagram
+    class Persona {
+        +String nombre
+        +String dni
+    }
+
+    class Estudiante {
+        +String numeroExpediente
+        +double notaMedia
+    }
+
+    Persona <|-- Estudiante
+```
